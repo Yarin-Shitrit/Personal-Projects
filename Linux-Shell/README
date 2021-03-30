@@ -1,0 +1,28 @@
+Yarin Shitrit, 315221218.
+
+This is a program in C that implements a "shell" under the linux operating system allowing the user to use the shell interface to perform system calls.
+The "shell" will print the user's id which is working as well as the current directory in the following format: user@path>
+exactly as in the regular linux terminal.
+
+Commands to use:
+ls -> Will display all the files in the current directory.
+ls -l -> Same as above, will have more thorough information on each file such as permissions, size, date of last edit etc.
+echo -> Output something to the screen.
+man, cat, sleep and more.
+UPDATE EX2:
+Shell now supports pipe operator '|' !
+The Shell also supports few redirection operators:
+1) > 
+2) <
+3) >>
+4) 2>
+You may also use the pipe operator before redirecting it's output, although not after.
+How to exit the "shell": 
+You can exit the "shell" using the command "done", this will end the current "shell" and will also print some information regarding the commands that were executed in the "shell".
+
+How to compile:
+Open a terminal in the directory and use: "gcc ex1.c -o ex1"
+How to run:
+After compiling as guided above, type "./ex1".
+
+

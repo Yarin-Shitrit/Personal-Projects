@@ -1,0 +1,34 @@
+Yarin Shitrit, 315221218.
+This program is a simulation of the unix Disk File System : 
+Which is the way that the files, their names, data etc. are stored on the disk.
+The program knows how to manage the data given by the user and write it correctly to the disk, the program knows 
+how to assert blocks of data using the direct blocks method and also the single in-direct method.
+The blocks of data are asserted by need, it means that as long as there's any free space in 
+pre-asserted block, we'll use this data first before asserting any other available blocks.
+This simulation is of a small Disk File System of a small computer with a single Main Directory.
+The size of the disk is pre-defined to be 256 characters (And is basically a text file).
+All of the files created during the program are all store in the Main Directory.
+This Disk File Management is a unix-file-system, that has default values of 3 direct blocks and one block of single-in-direct.
+The default settings may be altered, but the disk size will remain 256.
+
+
+Available functions:
+0) Exit - Close terminal and finish.
+1) listAll - Print all the data of the disk, including the files and their open/closed status.
+2) FsFormat - Format the disk: You will need to enter two additional values:
+                                                                            A) Size of a block.
+                                                                            B) Number of direct enrtries.
+NOTICE: !! YOU MUST FORMAT THE DISK BEFORE OPERATING ON IT!!
+3) CreateFile - Create a file: You will need to enter the name of the file you wish to create.
+4) OpenFile - If a file is closed, you can open it with this function by entering the file name you with to open.
+5) CloseFile - Close an opened file, enter the fd of the file you wish to close.
+6) WriteToFile - Write to a file: You will need to enter additional data:
+                                                                         A) FD of a file.
+                                                                         B) String to write.
+7) ReadFromFile - Read from a file: You will need to enter additional data:
+                                                                           A) FD of a file.
+                                                                           B) Length to read.
+8) DeleteFile - Delete a file, enter the name of the file you wish to delete.
+
+How to compile : CTRL + SHIFT + B
+How to run : CTRL + F5
